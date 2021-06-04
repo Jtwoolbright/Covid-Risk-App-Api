@@ -12,6 +12,11 @@ public class PatientController {
 	@Autowired
 	private PatientService patientService;
 	
+	@RequestMapping("/test")
+	public int getResponse() {
+		return 63;
+	}
+	
 	@RequestMapping(method=RequestMethod.POST, value="/result")
 	public int postPatient(@RequestBody Patient patient) {
 		patientService.setPatient(patient);
