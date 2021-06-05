@@ -8,26 +8,25 @@ will feature backend AI neural network that simulates outcomes of Covid cases.
 
 ## Documentation
       BASE_URL:  https://covid-risk-app-api.herokuapp.com/
-      GET(/test): returns 63 in JSON format
-      POST(/result): JSON object is required parameter, returns integer in JSON format
+      GET(value="/test"): returns 63 in JSON format
+      POST(@Param [JSON Object], value ="/result"): JSON object is required parameter, returns integer in JSON format
 
 ## JSON Object Format
     {
         "age": (int value),
         "sex": (int value),
         "tobacco": (int value),
-        "contact_other_covid": (int value),
-        "inmsupr": (int value),
+        "vaccinated": (int value),
+        "im_supress": (int value),
         "copd": (int value),
         "diabetes": (int value),
-        "renal_chronic": (int value),
+        "kidney_fail": (int value),
         "obesity": (int value),
         "pregnancy": (int value), 
         "hypertension": (int value),
         "asthma": (int value),
         "cardiovascular": (int value),
         "pneumonia": (int value),
-        "covid_res": (int value),
-        "other_disease": (int value)
+        "other": (int value)
      }
         
