@@ -2,34 +2,33 @@ package com.jtwoolbright.covidappapi.patient;
 
 public class Patient {
 	
-	private int age, sex, tobacco, contact_other_covid, inmsupr, copd,
-	diabetes, renal_chronic, obesity, pregnancy, hypertension, asthma, cardiovascular, pneumonia,
-	covid_res, other_disease;
+	private int age, sex, tobacco, vaccinated, imSupress, copd,
+	diabetes, kidneyFail, obesity, pregnancy, hypertension, asthma, cardiovascular, pneumonia,
+	other;
 	
 	public Patient() {
 		
 	}
 
-	public Patient(int age, int sex, int tobacco, int contact_other_covid,
-			int inmsupr, int copd, int diabetes, int renal_chronic, int obesity, int pregnancy, int hypertension,
-			int asthma, int cardiovascular, int pneumonia, int covid_res, int other_disease) {
+	public Patient(int age, int sex, int tobacco, int vaccinated,
+			int imSupress, int copd, int diabetes, int kidneyFail, int obesity, int pregnancy, int hypertension,
+			int asthma, int cardiovascular, int pneumonia, int other) {
 		super();
 		this.age = age;
 		this.sex = sex;
 		this.tobacco = tobacco;
-		this.contact_other_covid = contact_other_covid;
-		this.inmsupr = inmsupr;
+		this.vaccinated = vaccinated;
+		this.imSupress = imSupress;
 		this.copd = copd;
 		this.diabetes = diabetes;
-		this.renal_chronic = renal_chronic;
+		this.kidneyFail = kidneyFail;
 		this.obesity = obesity;
 		this.pregnancy = pregnancy;
 		this.hypertension = hypertension;
 		this.asthma = asthma;
 		this.cardiovascular = cardiovascular;
 		this.pneumonia = pneumonia;
-		this.covid_res = covid_res;
-		this.other_disease = other_disease;
+		this.other = other;
 	}
 
 	public int getAge() {
@@ -40,20 +39,20 @@ public class Patient {
 		this.age = age;
 	}
 
-	public int getContact_other_covid() {
-		return contact_other_covid;
+	public int getVaccinated() {
+		return vaccinated;
 	}
 
-	public void setContact_other_covid(int contact_other_covid) {
-		this.contact_other_covid = contact_other_covid;
+	public void setVaccinated(int vaccinated) {
+		this.vaccinated = vaccinated;
 	}
 
-	public int getInmsupr() {
-		return inmsupr;
+	public int getImSupress() {
+		return imSupress;
 	}
 
-	public void setInmsupr(int inmsupr) {
-		this.inmsupr = inmsupr;
+	public void setImSupress(int imSupress) {
+		this.imSupress = imSupress;
 	}
 
 	public int getCopd() {
@@ -104,20 +103,12 @@ public class Patient {
 		this.cardiovascular = cardiovascular;
 	}
 
-	public int getCovid_res() {
-		return covid_res;
+	public int getOther() {
+		return other;
 	}
 
-	public void setCovid_res(int covid_res) {
-		this.covid_res = covid_res;
-	}
-
-	public int getOther_disease() {
-		return other_disease;
-	}
-
-	public void setOther_disease(int other_disease) {
-		this.other_disease = other_disease;
+	public void setOther(int other) {
+		this.other = other;
 	}
 
 	public int getSex() {
@@ -136,14 +127,6 @@ public class Patient {
 		this.tobacco = tobacco;
 	}
 
-	public int getRenal_chronic() {
-		return renal_chronic;
-	}
-
-	public void setRenal_chronic(int renal_chronic) {
-		this.renal_chronic = renal_chronic;
-	}
-
 	public int getPregnancy() {
 		return pregnancy;
 	}
@@ -158,6 +141,14 @@ public class Patient {
 
 	public void setPneumonia(int pneumonia) {
 		this.pneumonia = pneumonia;
+	}
+	
+	public void getKidneyFail(int kidneyFail) {
+		this.kidneyFail = kidneyFail;
+	}
+	
+	public int getKidneyFail() {
+		return kidneyFail;
 	}
 
 }

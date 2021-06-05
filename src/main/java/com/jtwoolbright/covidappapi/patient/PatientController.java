@@ -12,7 +12,7 @@ public class PatientController {
 	@Autowired
 	private PatientService patientService;
 	
-	@RequestMapping("/test")
+	@RequestMapping(method=RequestMethod.GET, value="/test")
 	public int getResponse() {
 		return 63;
 	}

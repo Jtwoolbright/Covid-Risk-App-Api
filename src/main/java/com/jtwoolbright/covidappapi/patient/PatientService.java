@@ -22,15 +22,15 @@ public class PatientService {
 	}
 
 	private void setResult(Patient patient) {
-		if (patient.getObesity() == 1) {
-			result = 2;
-		} else if (patient.getRenal_chronic() == 1) {
+		if (patient.getVaccinated() == 1) {
+			result = 0;
+		} else if (patient.getKidneyFail() == 1) {
 			result = 2;
 		} else if (patient.getAge() >= 65) {
 			result = 2;
 		} else if (patient.getPneumonia() == 1) {
 			result = 2;
-		} else if (patient.getRenal_chronic() == 1) {
+		} else if (patient.getObesity() == 1) {
 			result = 2;
 		} else{
 			int count = 0;
@@ -38,9 +38,6 @@ public class PatientService {
 				count++;
 			}
 			if (patient.getTobacco() == 1) {
-				count++;
-			}
-			if (patient.getContact_other_covid() == 1) {
 				count++;
 			}
 			if (patient.getDiabetes() == 1) {
@@ -55,7 +52,7 @@ public class PatientService {
 			if (patient.getCopd() == 1) {
 				count+=4;
 			}
-			if (patient.getInmsupr() == 1) {
+			if (patient.getImSupress() == 1) {
 				count+=3;
 			}
 			if (patient.getHypertension() == 1) {
@@ -64,7 +61,7 @@ public class PatientService {
 			if (patient.getPregnancy() == 1) {
 				count++;
 			}
-			if (patient.getOther_disease() == 1) {
+			if (patient.getOther() == 1) {
 				count++;
 			}
 			if (count > 5) {
