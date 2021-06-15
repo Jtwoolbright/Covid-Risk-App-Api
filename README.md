@@ -2,7 +2,7 @@
 
 ## Description
 
-RESTful API built specifically to work with Android mobile application. Currently deployed on Heroku. POST
+RESTful API built specifically to work as replacement to AI based web service initially used in Covid Risk Finder mobile application Currently deployed on Heroku. POST
 request takes in covid risk factor data and returns simulated AI results as an integer value. Future release
 will feature backend AI neural network that simulates outcomes of Covid cases.
 
